@@ -1,0 +1,81 @@
+$cor-primaria: #4D4D4D;
+$cor-secundaria: #FF8605;
+$cor-branco: #fff;
+$cor-preto: #000;
+$cor-cinza: #a7a7a7;
+
+
+// mixins default
+@mixin h2-default {
+    font-size: 2rem;
+    color: $cor-secundaria;
+    font-weight: 800;
+}
+
+@mixin h3-default {
+    color: $cor-secundaria;
+    font-size: 1.5rem;
+}
+
+@mixin p-default {
+    font-size: 1.2rem;
+    color: $cor-branco;
+    font-weight: 400;
+}
+
+@mixin a-default ($bgcolor, $textcolor, $width) {
+    width: $width;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 2px;
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: .5s;
+}
+
+@mixin i-default {
+    color: $cor-primaria;
+    font-size: 1.4rem;
+}
+
+
+// mixins mobile
+@mixin h2-mobile {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $cor-secundaria;
+}
+
+@mixin h3-mobile {
+    color: $cor-secundaria;
+    font-size: 1.5rem;
+}
+
+@mixin p-mobile {
+    font-size: .8rem;
+    font-weight: 400;
+    color: $cor-branco;
+}
+
+@mixin a-mobile ($bgcolor, $textcolor, $width) {
+    width: $width;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: .8rem;
+    font-weight: 500;
+    transition: .5s;
+}
+
+@mixin i-mobile {
+    color: $cor-primaria;
+    font-size: 1.4rem;
+}

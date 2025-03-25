@@ -1,0 +1,231 @@
+@import '../mixins';
+
+@mixin footer {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $cor-primaria;
+    color: $cor-branco;
+
+    .footer__content {
+        max-width: 1400px;
+        padding: 50px 50px;
+        gap: 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer__logo {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__content {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+
+                #febraban {
+                    width: 15%;
+                }
+
+                img {
+                    width: 70%;
+                    height: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            
+
+            p {
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+                color: $cor-branco;
+                font-weight: 400;
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                a {
+                    color: $cor-branco;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $cor-branco;
+                    }
+
+                    .i {
+                        font-size: 1.5rem;
+                        color: $cor-branco;
+                        transition: .5s;
+                    }
+                }
+            }
+
+        }
+
+        .footer__itens {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: $cor-branco;
+                font-weight: 600;
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li a {
+                    text-decoration: none;
+                    color: $cor-branco;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $cor-secundaria;
+                    }
+                }
+            }
+        }
+
+        .footer__contato {
+            ul li {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .i {
+                    @include i-default;
+                    color: $cor-branco;
+                }
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+    }
+}
+
+
+
+// footer-mobile
+@mixin footer-mobile {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $cor-primaria;
+    color: $cor-branco;
+
+    .footer__content {
+        max-width: 100%;
+        padding: 50px 50px;
+        gap: 40px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .footer__logo {
+            width: 100%;
+
+            img {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 20px;
+                @include p-mobile;
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: $cor-branco;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $cor-branco;
+                    }
+
+                    .i {
+                        font-size: 1.5rem;
+                        margin: 0 10px;
+                        color: $cor-branco;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+
+        .footer__itens {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: $cor-branco;
+                font-weight: 600;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li a {
+                    text-decoration: none;
+                    color: $cor-branco;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $cor-secundaria;
+                    }
+                }
+            }
+        }
+
+        .footer__contato {
+            ul li {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .i {
+                    @include i-default;
+                    color: $cor-branco;
+                }
+            }
+        }
+    }
+
+    .copy {
+        width: 90%;
+        font-size: .8rem;
+        text-align: center;
+    }
+}

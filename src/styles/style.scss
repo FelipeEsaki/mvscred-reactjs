@@ -1,0 +1,39 @@
+@import './mixins/mixins';
+@import './mixins/header/header';
+@import './home/home';
+@import './home/firstSection';
+@import './home/secondSection';
+@import './home/thirdSection';
+@import './home/fourthSection';
+@import './home/fifthSection';
+@import './mixins/footer/footerMixins';
+@import './mixins/footer/footer';
+@import './quemSomos/quemSomos';
+@import './servicos/servicos';
+@import './simulacao/simulacao';
+@import './contato/contato';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    @include header;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/bg.jpg');
+}
+
+home {
+    max-width: 100vw;
+}
