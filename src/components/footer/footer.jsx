@@ -39,20 +39,20 @@ export default function Footer () {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/quemSomos">Quem somos</Link></li>
-                    <li><Link to="/quemSomos">Serviços</Link></li>
-                    <li><Link to="/quemSomos">Simulação</Link></li>
-                    <li><Link to="/quemSomos">Contato</Link></li>
+                    <li><Link to="/servicos">Serviços</Link></li>
+                    <li><Link to="/simulacao">Simulação</Link></li>
+                    <li><Link to="/contato">Contato</Link></li>
                 </ul>
             </div>
             <div className="footer__servicos footer__itens">
                 <span>Serviços</span>
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/quemSomos">Crédito Consignado</Link></li>
-                    <li><Link to="/quemSomos">Capital de Giro</Link></li>
-                    <li><Link to="/quemSomos">Financiamentos</Link></li>
-                    <li><Link to="/quemSomos">Consórcios</Link></li>
-                    <li><Link to="/quemSomos">Crédito Pessoal</Link></li>
+                    <li><Link to="/servicos">Crédito Consignado</Link></li>
+                    <li><Link to="/servicos">Capital de Giro</Link></li>
+                    <li><Link to="/servicos">Financiamentos</Link></li>
+                    <li><Link to="/servicos">Consórcios</Link></li>
+                    <li><Link to="/servicos">Crédito Pessoal</Link></li>
                 </ul>
             </div>
             <div className="footer__contato footer__itens">
