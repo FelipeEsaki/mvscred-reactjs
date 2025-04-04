@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import ItensToChange from '../changeInfos';
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -9,7 +10,7 @@ export default function Form() {
     
     const encodedMessage = encodeURIComponent(message);
 
-    const whatsappLink = `https://wa.me/?text=${encodedMessage}`;
+        const whatsappLink = `https://wa.me/${ItensToChange.numberSimulation}?text=${encodedMessage}`;
 
     window.open(whatsappLink, '_blank');
   };
