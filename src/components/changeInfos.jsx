@@ -6,6 +6,7 @@ const ItensToChange = {
     logoFooter: 'logo branco H.png',
     logoQuemSomos: 'logo C V.png',
     number: '(47) 99607 - 6274',
+    numberSimulation: '5547996076274',
     city: 'Joinville - SC',
     hour: 'Seg - Sex: 09:00 - 17:00',
     cnpj: '58.416.451/0001-94',

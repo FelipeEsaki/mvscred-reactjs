@@ -11,7 +11,7 @@ function FifthSection() {
                     <p>Clique em Simule Agora para entrar em contato com a nossa equipe
                         especializada e descobrir a melhor solução!</p>
                 </div>
-                <div className="fifth__section-all-link"><a href="simulacao.html">Simule Agora</a></div>
+                <div className="fifth__section-all-link"><Link to="/simulacao">Simule agora</Link></div>
             </div>
         </section>
     )
