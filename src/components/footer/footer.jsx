@@ -13,7 +13,7 @@ export default function Footer () {
             <div className="footer__logo">
                 <div className="footer__logo__content">
                     <img src={`assets/${ItensToChange.logoFooter}`} alt={`Logo ${ItensToChange.brandname}`}/>
-                    <img id='febraban' src="../../../public/assets/febraban.png" alt="Logo Febraban"/>
+                    <img id='febraban' src="assets/febraban.png" alt="Logo Febraban"/>
                 </div>
 
                 <h4>CNPJ: {ItensToChange.cnpj}</h4>
