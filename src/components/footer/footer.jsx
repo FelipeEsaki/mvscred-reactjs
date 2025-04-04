@@ -13,9 +13,10 @@ export default function Footer () {
             <div className="footer__logo">
                 <div className="footer__logo__content">
                     <img src={`assets/${ItensToChange.logoFooter}`} alt={`Logo ${ItensToChange.brandname}`}/>
+                    <img id='febraban' src="../../../public/assets/febraban.png" alt="Logo Febraban"/>
                 </div>
 
-                <h4>{ItensToChange.cnpj}</h4>
+                <h4>CNPJ: {ItensToChange.cnpj}</h4>
                 <br/>
                 
                 <p>A {ItensToChange.brandname} é uma empresa que engloba uma ampla variedade de serviços financeiros, incluindo linhas de crédito, financiamentos, consórcios e seguros.</p>
